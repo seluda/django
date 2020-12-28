@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-with, initial-sacale=1.0">
+    <title>   {% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <header>
+    <a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a>
+    </header>
+    {% block content %}{% endblock content %}
+
+</body>
+</html>
